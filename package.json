@@ -1,0 +1,19 @@
+{
+    "name": "shinil-roadview",
+    "version": "1.0.0",
+    "description": "Road-View of Shinil High School",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm ci && tsc && node server.js",
+        "test": "ts-node ./src/server.ts"
+    },
+    "author": "Dohyun Kim",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.8",
+        "express": "^4.18.1"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.35"
+    }
+}
