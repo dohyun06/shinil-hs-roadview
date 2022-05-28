@@ -11,3 +11,9 @@ app.get('/', (_: any, res: any) => res.render('index.html'));
 app.get('/*', (_: any, res: any) => res.redirect('/'));
 
 app.listen(PORT, console.log('http://localhost:3000'));
+
+const http = require('http');
+
+setInterval(() => {
+    http.get('https://shinilhsrv.herokuapp.com/');
+}, 600000);
