@@ -1419,7 +1419,7 @@ window.pannellum = (function (E, g, p) {
               x(Number(b[e]));
               break;
             case 'autoLoad':
-              !0 === b[e] && C === p && ((q.load.box.style.display = 'inline'), (v.load.style.display = 'none'), oa());
+              !0 === b[e] && C === p && ((q.load.box.style.display = 'none'), (v.load.style.display = 'none'), oa());
               break;
             case 'showZoomCtrl':
               v.zoom.style.display = b[e] && !1 != b.showControls ? 'block' : 'none';
@@ -1493,7 +1493,7 @@ window.pannellum = (function (E, g, p) {
       Na && ((q.load.box.style.display = 'none'), (q.errorMsg.style.display = 'none'), (Na = !1), (M.style.display = 'block'), B('errorcleared'));
       G = !1;
       v.load.style.display = 'none';
-      q.load.box.style.display = 'inline';
+      q.load.box.style.display = 'none';
       oa();
     }
     function y(a, c, d, h, g) {
@@ -1718,6 +1718,14 @@ window.pannellum = (function (E, g, p) {
     q.load.msg = g.createElement('p');
     q.load.msg.className = 'pnlm-lmsg';
     q.load.box.appendChild(q.load.msg);
+
+    q.load.box.style = 'display:none';
+    q.load.boxp.style = 'display:none';
+    q.load.lbox.style = 'display:none';
+    q.load.lbar.style = 'display:none';
+    q.load.lbarFill.style = 'display:none';
+    q.load.msg.style = 'display:none';
+
     J.appendChild(q.load.box);
     q.errorMsg = g.createElement('div');
     q.errorMsg.className = 'pnlm-error-msg pnlm-info-box';

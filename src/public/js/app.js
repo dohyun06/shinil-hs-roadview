@@ -3,6 +3,7 @@ pannellum.viewer('panorama', {
     firstScene: 'Panorama',
     author: '구교승 권준서 김도현 양지호',
     sceneFadeDuration: 1000,
+    preview: '../public/img/Preview.jpg',
   },
 
   scenes: {
